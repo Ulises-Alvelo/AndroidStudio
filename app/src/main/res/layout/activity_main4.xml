@@ -8,7 +8,7 @@
     tools:context=".MainActivity4">
 
     <Button
-        android:id="@+id/changeInterface4"
+        android:id="@+id/changeInterfaceto1"
         android:layout_width="138dp"
         android:layout_height="37dp"
         android:text="Cambiar interfaz"

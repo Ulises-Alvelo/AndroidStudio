@@ -1,12 +1,12 @@
 package com.example.app1
 
-import android.content.Intent
 import android.hardware.Sensor
 import android.hardware.SensorEvent
 import android.hardware.SensorEventListener
 import android.hardware.SensorManager
 import android.os.Bundle
 import android.widget.Button
+import android.content.Intent
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -38,6 +38,12 @@ class MainActivity4 : AppCompatActivity(), SensorEventListener {
         txtSensor1 = findViewById(R.id.txtSensor1)
         txtSensor2 = findViewById(R.id.txtSensor2)
         txtSensor3 = findViewById(R.id.txtSensor3)
+        val cambiarInterfaz = findViewById<Button>(R.id.changeInterfaceto1)
+
+        cambiarInterfaz.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
 
         sensorManager = getSystemService(SENSOR_SERVICE) as SensorManager
 
